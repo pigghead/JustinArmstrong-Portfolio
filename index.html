@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lange="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet"
+    href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" 
+    rel="stylesheet">
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__item" href="#home">Home</a></li>
+          <li class="nav__item"><a class="nav__item" href="#about-me">About Me</a></li>
+          <li class="nav__item"><a class="nav__item" href="#my-work">Work</a></li>
+          <li class="nav__item"><a class="nav__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro page/ Splash page -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title-intro">
+        Hello, I'm <strong>Justin Armstrong</strong>
+      </h1>
+      <h3 class="section__subtitle section__subtitle-intro">Game Developer</h3>
+      <img src="img/ME-cropped.jpg" alt="Pic of Me" class="intro__img">
+      <button class="intro__btn" href="#my-work">My Work</button>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about-me">
+      <h1 class="section__title section__title-aboutme">About Me</h1>
+        <p class="about-me__blurb">I am a developer in attendance at RIT for Game Design
+          and development. I have consistently ventured outside my field to create interesting
+          simulations. This site is a collection of my projects over the years! Not
+          all of my code is listed on this website, but you can check out my 
+          <a href="https://github.com/pigghead" target="_blank" rel="noopener noreferrer">Github</a> 
+          for more samples.</p>
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="my-work">
+      <h1 class="section__title section__title-mywork">My Work</h1>
+      <div class="projects__matrix">
+        <div class="projects__column">
+          <a class="projects__link" href="https://github.com/pigghead/TicTacToe">
+            <img class="projects__img" src="img/tictactoe-cap-resized.png" alt="project-img">
+          </a>
+          <h4 class="projects__title">Tic Tac Toe</h4>
+          <p>Tic Tac Toe created in C++. Used the SDL2 library to create a GUI
+            to play</p>
+        </div>
+
+        <div class="projects__column">
+          <a class="projects__link" href="https://armstrongj.itch.io/fight-the-vid">
+            <img class="projects__img" src="img/cell-wars-capture-cropped.png" alt="project-img">
+          </a>
+          <h4 class="projects__title">Cell Wars</h4>
+          <p>Recreated the mobile game Cell Expansion Wars in Unity.</p>
+        </div>
+
+        <div class="projects__column">
+          <a class="projects__link" href="https://gist.github.com/pigghead/ece7aea9b51b799fbb17b5f1e7c1521b">
+            <img class="projects__img" src="img/downscale-img-cropped.png" alt="project-img">
+          </a>
+          <h4 class="projects__title">Image down scaler</h4>
+          <p>Create an image downscaler to down scale an image set 
+            used for a <a href="https://youtu.be/vq_0zIUcqFU">DCGAN</a> project</p>
+        </div>
+        <!--a class="projects__item">
+          <img class="projects__img" src="#" alt="project-picture">
+        </a> 
+
+        <a class="projects__item">
+          <img class="projects__img" src="#" alt="project-picture">
+        </a> 
+
+        <a class="projects__item">
+          <img class="projects__img" src="#" alt="project-picture">
+        </a--> 
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <footer class="footer">  
+      <p class="mail"><a class="footer__link" href="mailto:justin.strongarms10@gmail.com?subject=Portfolio Inquiry">Email me!</a></p>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" 
+          href="https://github.com/pigghead"
+          target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" 
+          href="https://www.linkedin.com/in/justin-armstrong-916134127/"
+          target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" 
+          href="https://armstrongj.itch.io/"
+          target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-itch-io"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <!--section class="contact" id="contact">
+      <ul class="social__list">
+        <li class="social_item"><a><i class="fab fa-github-square"></i></a></li>
+        <li class="social_item"><a><i class="fab fa-linkedin"></i></a></li>
+        <li class="social_item"><a><i class="fab fa-itch-io"></i></a></li>
+      </ul>
+    </section-->
+  </body>
+</html>
