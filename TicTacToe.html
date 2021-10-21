@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet"
+    href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" 
+    rel="stylesheet">
+    <script src="js/components.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <section class="entry">
+      <h1 class="section__title">Tic Tac Toe</h1>
+      <img class="entry__img" src="img/tictactoe-cap-resized.png">
+      <p class="section__subtitle">Tic Tac Toe created in C++. Used the SDL2 library to create a GUI to play.</p>
+      <p class="section__subtitle">The most difficult part about this project was creating the circles because
+        C++ nor the SDL2 library have a native function for creating circles, especially
+        hollow ones. I opted to use the Bresenham Circle algorithm, derived from
+        the <a href="https://en.wikipedia.org/wiki/Midpoint_circle_algorithm">Midpoint 
+        circle algorithm</a>. 8 points are initially drawn, and each iteration
+        draws 8 additional points in a shifted position, resulting in a circle.
+      </p>
+      <p class="section__subtitle"><a href="https://github.com/pigghead/TicTacToe">Source Code</a></p>
+      <h3 class="section__title">Technologies Used</h3>
+      <ul class="entry__list">
+        <li class="entry__list-item">C++</li>
+        <li class="entry__list-item">SDL2 (Simple DirectMedia Layer)</li>
+        <li class="entry__list-item">Visual Studio</li>
+      </ul>
+    </section>
+  </body>
+  <contact-footer></contact-footer>
+</html>

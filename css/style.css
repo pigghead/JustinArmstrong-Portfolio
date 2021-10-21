@@ -92,7 +92,34 @@ strong {
 
 /* Navigation */
 .nav {
-    display: none;
+    /*display: none;*/
+}
+
+.nav__list {
+    background: var(--clr-dark);
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav__item {
+    float: right;
+    padding: 1.5em;
+}
+
+.nav__link {
+    color: var(--clr-accent);
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    /*padding: 0.5em;*/
+}
+
+.nav__link:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 /* Intro section */
@@ -248,4 +275,27 @@ strong {
 
 .social-list__item {
     margin: 0.5em;
+}
+
+/***** PROJECT INDIVIDUAL PAGES *****/
+.entry__img {
+    max-width: 30%;
+}
+
+.entry__list,
+.entry__list-item {
+    font-family: var(--ff-secondary);
+}
+
+/***** RESUME *****/
+.resume {
+
+}
+
+.resume__listTitle {
+    font-family: var(--ff-primary);
+}
+
+.resume__listItem {
+    font-family: var(--ff-secondary);
 }

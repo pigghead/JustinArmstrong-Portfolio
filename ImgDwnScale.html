@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet"
+    href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" 
+    rel="stylesheet">
+    <script src="js/components.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <section class="entry">
+      <h1 class="section__title">Image Down Scaler</h1>
+      <img class="entry__img" src="img/downscale-img-cropped.png">
+      <p class="section__subtitle">Created an image downscaler to down scale an image set used for a DCGAN project.</p>
+      <p class="section__subtitle">This project was actually a component of my Deep Convolutional
+        Generative Adversarial Network for my Advanced Concepts in Game Dev class. This component 
+        takes batches of image files, no matter the size, and reduces them to 60x60x3 (width, height, channels).
+        These new images were then fed into the DCGAN to be convolved over to make predictions about the image
+        as well as create "deep fake" iterations of each image.
+      </p>
+      <p class="section__subtitle"><a href="https://gist.github.com/pigghead/ece7aea9b51b799fbb17b5f1e7c1521b">Github Gist</a></p>
+      <h3 class="section__title">Technologies Used</h3>
+      <ul class="entry__list">
+        <li class="entry__list-item">Python</li>
+        <li class="entry__list-item">PyTorch</li>
+        <li class="entry__list-item">MatPlotLib / NumPy</li>
+        <li class="entry__list-item">Google Colab</li>
+      </ul>
+    </section>
+  </body>
+  <contact-footer></contact-footer>
+</html>
