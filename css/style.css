@@ -47,7 +47,7 @@ body {
 }
 
 section {
-    padding: 6em 3em;
+    padding: 6em 6em;
 }
 
 img {
@@ -74,7 +74,11 @@ strong {
 
 .section__title {
     font-family: var(--ff-primary);
-    margin: .25em;
+    /*margin: .25em;*/
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
 }
 
 .section__title-intro {
@@ -88,7 +92,7 @@ strong {
 
 /* Navigation */
 .nav {
-    display: none;
+    /*display: none;*/
 }
 
 /* Intro section */
@@ -100,6 +104,7 @@ strong {
     background: var(--clr-accent);
     padding: 0.2em;
     margin: 0.2em;
+    line-height: 1.5;
 }
 
 .intro__img {
@@ -145,8 +150,7 @@ strong {
         margin: 0 auto;
         grid-template-areas: 
             "img title"
-            "img subtitle"
-            "btn .";
+            "img subtitle";
         column-gap: 10px;
         row-gap: 10px;
     }
@@ -158,7 +162,10 @@ strong {
 }
 
 .section__title-aboutme {
-    text-align: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
 }
 
 .section__title-aboutme::after {
@@ -174,16 +181,14 @@ strong {
 }
 
 /* projects section */
-.section__title-mywork {
-    text-align: center;
-}
 
 .my-work p {
+    font-family: var(--ff-secondary);
     font-size: 1rem;
 }
 
 .projects__title {
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     font-weight: var(--fw-bolder);
 }
 
