@@ -6,6 +6,9 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = 
           "<header>\
+          <div class='logo'>\
+            <img src='#' alt='my-logo'>\
+          </div>\
             <nav class='nav'>\
               <ul class='nav__list'>\
                 <li class='nav__item'><a class='nav__link' href='resume.html'>Resume</a></li>\
@@ -26,7 +29,7 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = 
     "<footer class='footer'>\
-    <p class='mail'><a class='footer__link' href='mailto:justin.strongarms10@gmail.com?subject=Portfolio Inquiry'>Email me!</a></p>\
+    <p class='mail'><a class='footer__link' href='mailto:justin.strongarms10@gmail.com?subject=Portfolio Inquiry'>contact me</a></p>\
     <ul class='social-list'>\
       <li class='social-list__item'>\
         <a class='social-list__link'\

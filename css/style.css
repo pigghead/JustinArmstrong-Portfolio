@@ -6,7 +6,7 @@
 
 /* custom properties */
 :root {
-    --ff-primary: 'Roboto Slab', serif;
+    --ff-primary: 'Montserrat', sans-serif;
     --ff-secondary: 'Montserrat', sans-serif;
 
     --fs-h1: 2.75rem;
@@ -18,10 +18,15 @@
     --fw-bold: 700;
     --fw-bolder: 900;
 
-    --clr-light01: #E0E1DD;
-    --clr-light02: #fff;
-    --clr-dark: #0D1B2A;
-    --clr-accent: #778DA9;
+    --clr-light01: #ffffff;
+    --clr-dark: #1d1e2c;
+    --clr-accent: #FFFF00;
+    --clr-navLight: #e0e0e0;
+
+    --clr-light-alt: #E0E1DD;
+    --clr-light-alt2: #fff;
+    --clr-dark-alt: #0D1B2A;
+    --clr-accent-alt: #778DA9;
 
     --box-shadow: 0.3em 0.3em 0.75em rgba(0,0,0,0.2),
                   0.12em 0.12em 0.25em rgba(0,0,0,0.2);
@@ -91,12 +96,17 @@ strong {
 }
 
 /* Navigation */
+header {
+    background: var(--clr-accent-alt);
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav {
-    /*display: none;*/
+    /*display: none*/
 }
 
 .nav__list {
-    background: var(--clr-dark);
     list-style-type: none;
     display: block;
     margin: 0;
@@ -110,7 +120,7 @@ strong {
 }
 
 .nav__link {
-    color: var(--clr-accent);
+    color: var(--clr-light01);
     text-decoration: none;
     font-family: var(--ff-primary);
     font-size: var(--fs-h3);
@@ -127,8 +137,13 @@ strong {
     position: relative;
 }
 
+.intro__name {
+    color: var(--clr-accent-alt);
+}
+
 .section__subtitle-intro {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
+    color: var(--clr-light01);
     padding: 0.2em;
     margin: 0.2em;
     line-height: 1.5;
@@ -185,7 +200,8 @@ strong {
 
 /* About Me */
 .about-me {
-    background: var(--clr-light02);
+    background: var(--clr-dark-alt);
+    color: var(--clr-light01);
 }
 
 .section__title-aboutme {
@@ -219,16 +235,22 @@ strong {
     font-weight: var(--fw-bolder);
 }
 
-.projects__matrix {
+.projects__matrix ul {
     display: flex;
     flex-wrap: wrap;
     padding: 1em 0;
+    list-style: none;
 }
 
-.projects__column {
+.projects__matrix ul li {
+    flex: 0 0 33%;
+    padding: 1em;
+}
+
+/*.projects__column {
     flex: 30%;
     padding: 0 8px;
-}
+}*/
 
 .projects__img {
     width: 100%;
@@ -242,8 +264,8 @@ strong {
 
 /* Footer */
 .footer {
-    background: var(--clr-dark);
-    color: var(--clr-accent);
+    background: var(--clr-accent-alt);
+    color: var(--clr-light01);
     text-align: center;
     padding: 0.55em 0;
     font-size: var(--fs-h3);
