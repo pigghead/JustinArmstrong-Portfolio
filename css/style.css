@@ -235,22 +235,17 @@ header {
     font-weight: var(--fw-bolder);
 }
 
-.projects__matrix ul {
+.projects__list {
     display: flex;
     flex-wrap: wrap;
     padding: 1em 0;
     list-style: none;
 }
 
-.projects__matrix ul li {
+.projects__matrix>ul>li {
     flex: 0 0 33%;
     padding: 1em;
 }
-
-/*.projects__column {
-    flex: 30%;
-    padding: 0 8px;
-}*/
 
 .projects__img {
     width: 100%;
@@ -260,6 +255,14 @@ header {
 
 .projects__img:hover {
     transform: scale(1.05);
+}
+
+.projects__technologiesList {
+    margin: 0;
+}
+
+.projects__technologiesList__item {
+    padding: 0.5em 0;
 }
 
 /* Footer */
